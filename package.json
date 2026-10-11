@@ -1,0 +1,13 @@
+{
+  "name": "agent-stuck-detector",
+  "version": "1.0.0",
+  "description": "Detect repeated failed approaches in Claude Code tool use.",
+  "license": "MIT",
+  "bin": { "agent-stuck-detector": "bin/cli.js" },
+  "files": ["bin", "src", "README.md"],
+  "scripts": {
+    "postinstall": "node bin/setup.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" }
+}
